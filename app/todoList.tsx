@@ -29,7 +29,7 @@ const TodoList = () => {
     const newTodo = {
       id: Math.random(),
       name: todo,
-      priorityLevel: "Low",
+      priorityLevel: "High",
       isCompleted: false,
       date: new Date().getTime(),
     };
@@ -47,7 +47,7 @@ const TodoList = () => {
       case "Low":
         return "green";
       case "Medium":
-        return "yellow"
+        return "orange"
       case "High":
         return "red"
     }

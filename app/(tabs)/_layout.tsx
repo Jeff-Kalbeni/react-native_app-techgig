@@ -13,6 +13,7 @@ const TabLayout = () => {
           tabBarLabel: "Home",
           tabBarActiveTintColor: '#4169E1',
           tabBarInactiveTintColor: 'gray',
+          tabBarStyle: {display:"none"},
           tabBarIcon: ({focused}) => (<Feather name="home" size={24} color={focused? '#4169E1':'gray'} />)
         }}
 

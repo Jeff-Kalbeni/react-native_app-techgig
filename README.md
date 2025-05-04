@@ -82,6 +82,6 @@ Here are the screens:
 - ### Third Onboarding screen:
 ![Third onboarding screen](assets/images/onboarding3.jpg)
 
-- ### Home sroll screen (to display items in a flatlist):
+- ### Home scroll screen (to display items in a flatlist):
 ![home-scroll screen](assets/images/home-scroll.jpg)
 

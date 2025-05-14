@@ -12,12 +12,11 @@ type ItemProps = {
 const Item = ({name, email, city}: ItemProps) => (
   <View style={{
     backgroundColor: "white",
-    marginVertical:10,
+    marginVertical:5,
     borderRadius:15,
-    gap:10,
     alignItems:"center",
     justifyContent:"center",
-    padding: 5,
+    width:340,
   }}>
     <View 
     style={{
@@ -29,10 +28,10 @@ const Item = ({name, email, city}: ItemProps) => (
         <Image source={User} style={{width:'100%', height:50,}} resizeMode="cover"/>
     </View>
 
-    <View>
+    <View style={{padding:5, alignItems:"center", justifyContent:"center"}}>
       <Text style={{fontSize:17, fontWeight:700, color:"black"}}>{name}</Text>
-      <Text style={{fontSize:15, color:"gray"}}>{email}</Text>
-      <Text style={{fontSize:12, color:"lightgray"}}>{city}</Text>
+      <Text style={{fontSize:15, color:"gray"}}>Email: {email}</Text>
+      <Text style={{fontSize:12, color:"gray"}}>City: {city}</Text>
     </View>
   </View>
 )
@@ -82,23 +81,23 @@ const UserDetails = () => {
       <SafeAreaView>
         <View style={{flexDirection:"row", justifyContent:"space-between",
           marginBottom:5,
-          marginHorizontal:20,
+          marginHorizontal:10,
           marginTop:5
         }}>
-          <Text>List of Users</Text>
+          <Text style={{fontWeight:700}}>List of Users</Text>
           <TouchableOpacity
             style={{
-              backgroundColor:"#FFFFFF",
               borderRadius:10,
-              padding:5
+              borderColor:"gray",
+              borderWidth:1,
+              padding:3
             }}
             onPress={() => handleAPI()}>
-            <Text style={{color:"blue", fontSize:12, fontWeight:700}}>Refresh</Text>
+            <Text style={{color:"black", fontSize:12, fontWeight:700}}>Refresh</Text>
           </TouchableOpacity>
         </View>
         <View style={{
-          gap:5,
-          backgroundColor:"#FAF9F6",
+          backgroundColor:"lightgray",
           alignItems:"center",
           justifyContent:"center",}}>
           <FlatList
@@ -118,4 +117,4 @@ const UserDetails = () => {
   )
 }
 
-export default UserDetails
+export default UserDetails;

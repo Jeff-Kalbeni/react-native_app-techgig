@@ -5,6 +5,7 @@ import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import { getFocusedRouteNameFromRoute } from '@react-navigation/native';
 import { Tabs } from "expo-router";
 import React from "react";
+import "../global.css";
 
 
 const InitialLayout = () => {
@@ -113,6 +114,15 @@ const InitialLayout = () => {
         <Tabs.Screen
           name="todo-list"
           options={{
+            title:"Todo-List",
+            tabBarIcon: ({color, size}) => (<FontAwesome6 name="user-large"
+            size={size}
+            color={color} />),
+        }}/>
+        <Tabs.Screen
+          name="user-details"
+          options={{
+            href:null,
             title:"Todo-List",
             tabBarIcon: ({color, size}) => (<FontAwesome6 name="user-large"
             size={size}

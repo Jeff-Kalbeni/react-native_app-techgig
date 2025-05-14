@@ -46,7 +46,7 @@ const Index = () => {
     // } else 
     if(email === "" || password === ""){ 
       //Alert.alert("Enter email or password")
-      router.push('/onboarding01')
+      router.push('./user-details')
     }
     else {
       Alert.alert("Invalid email or password")

@@ -85,3 +85,10 @@ Here are the screens:
 - ### Home scroll screen (to display items in a flatlist):
 ![home-scroll screen](assets/images/home-scroll.jpg)
 
+## Assignment III
+We were required to build a simple mobile app screen that fetches and displays a list of users from a public API using 
+useState and useEffect.
+
+- ### Screenshot of the screen that displays data from the api
+
+![screenshot of the api screen](assets/images/users-from-api.jpg)
